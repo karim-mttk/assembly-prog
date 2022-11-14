@@ -1,7 +1,4 @@
   # hexmain.asm
-  # Written 2015-09-04 by F Lundevall
-  # Copyright abandonded - this file is in the public domain.
-
 	.text
 main:
 	li	$a0, 17		# change this to test different values
