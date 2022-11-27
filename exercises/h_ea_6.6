@@ -1,0 +1,16 @@
+#int sum = 0
+#for (i = 1; i < 101; i = i * 2)
+#sum = sum + i
+
+addi $s1, $0, 0 #sum = 0
+addi $s0, $0, 1 #i=1
+
+loop:
+slt $t1, $s0, $t0
+beq $t1, $0, done
+add $s1, $s1, $s0
+sll $s0, $s0, 1
+j loop
+
+done:
+
