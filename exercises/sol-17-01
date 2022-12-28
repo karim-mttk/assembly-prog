@@ -1,0 +1,7 @@
+get_status:
+lui $t0, 0xabab
+ori $t0, 0x0020
+lw   $v0, 0($t0)
+andi $v0, $v0, 0x4
+srl  $v0, $v0, 2
+jr  $ra
